@@ -23,7 +23,11 @@ Tab1Section:NewButton("Keyboard Script", "Execute Script", function()
 
 end)
 
-Tab1Section:NewKeybind("ToggleUI", "Ui Close and Off", Enum.KeyCode.F, function()
+Tab1Section:NewButton("Infiniteyield", "Op Script", function()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source', true))()
+end)
+
+Tab1Section:NewKeybind("ToggleUI", "Ui Close and Off", Enum.KeyCode.RightShift, function()
 	Library:ToggleUI()
 end)
 
